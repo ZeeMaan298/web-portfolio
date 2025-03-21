@@ -1,0 +1,12 @@
+{
+  "routes": {
+    "/web-portfolio": {},
+    "/web-portfolio/about": {},
+    "/web-portfolio/contact": {},
+    "/web-portfolio/home": {},
+    "/web-portfolio/login": {},
+    "/web-portfolio/resume": {},
+    "/web-portfolio/services": {},
+    "/web-portfolio/skills": {}
+  }
+}
