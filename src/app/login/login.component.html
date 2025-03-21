@@ -1,0 +1,33 @@
+<div class="login-overlay">
+  <div class="login-container">
+    <button class="close-btn" (click)="closeDialog()">✖</button>
+
+    <h2 class="login-title">Welcome Back</h2>
+    <p class="login-subtitle">Please enter your credentials</p>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email" required placeholder="Enter your email">
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <div class="password-container">
+          <input id="password" [type]="showPassword() ? 'text' : 'password'" formControlName="password" required placeholder="Enter your password">
+          <button type="button" class="toggle-password" (click)="showPassword.set(!showPassword())">
+            {{ showPassword() ? '👁' : '🙈' }}
+          </button>
+        </div>
+      </div>
+
+      <button type="submit" class="login-btn" [disabled]="loginForm.invalid">Login</button>
+    </form>
+  </div>
+
+  <!-- Error Popup -->
+  <div *ngIf="errorMessage()" class="error-popup">
+    <p>{{ errorMessage() }}</p>
+    <button class="close-error" (click)="errorMessage.set(null)">✖</button>
+  </div>
+</div>

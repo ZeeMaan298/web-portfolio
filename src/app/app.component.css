@@ -1,0 +1,15 @@
+.main-content {
+  background: #000; /* Black background */
+  color: #fff; /* White text */
+  position: relative; /* Remove fixed positioning */
+  width: 100%; /* Ensure it takes the full width */
+  min-height: 100vh; /* Full height */
+  margin-top: 70px; /* Keep margin for navbar */
+  overflow: hidden; /* Prevent unwanted scrollbars */
+  display: flex;
+  flex-direction: column;
+}
+  app-header{
+    position: fixed;
+    z-index: 1000;
+  }
