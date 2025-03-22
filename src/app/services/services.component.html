@@ -1,0 +1,14 @@
+
+<section class="services" id="services">
+  <h2 class="section-title">Services</h2>
+  <p class="section-description">
+    Building high-performance, scalable, and responsive websites using the latest technologies to bring your ideas to life.
+  </p>
+  <div class="services-container">
+    <div class="service-card" *ngFor="let service of services">
+      <i [class]="service.icon"></i>
+      <h3>{{ service.title }}</h3>
+      <hr />
+    </div>
+  </div>
+</section>
