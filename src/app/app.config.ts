@@ -13,13 +13,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 
 import { MatDialogModule } from '@angular/material/dialog';
-
+import { app, firebaseConfig} from '../firebase.config';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideAnimations(),
     provideRouter([]),
+    provideFirebaseApp(() => initializeApp(firebaseConfig)),
+  
     importProvidersFrom(
       MatToolbarModule,
       MatButtonModule,
