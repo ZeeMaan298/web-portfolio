@@ -1,6 +1,6 @@
 // src/firebase.config.ts
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+
 // src/app.config.ts
 import { ApplicationConfig } from '@angular/core';
 import { provideRouter } from '@angular/router';
@@ -19,4 +19,4 @@ export const firebaseConfig = {
 };
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-export const analytics = getAnalytics(app);
+
