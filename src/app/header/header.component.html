@@ -2,7 +2,7 @@
   <div class="menuDiv">
      <!-- Logo -->
        <div class="logoDiv">
-         <a href="/" class="text-2xl font-bold text-white uppercase tracking-wider Zeelogo">
+         <a fragment="home" class="text-2xl font-bold text-white uppercase tracking-wider Zeelogo">
         <img src="/images/Zee.png" alt="Zee" class="Zeelogo1" width="100">
       </a>
        </div>
@@ -45,7 +45,14 @@
         <a [routerLink]="[]" fragment="services" class="nav-link">Services</a>
         <a [routerLink]="[]" fragment="skills" class="nav-link">Skills</a>
         <a [routerLink]="[]" fragment="contact" class="nav-link">Contact</a>
-       <a class="login-btn cursor-pointer" (click)="openLoginDialog()">Login</a>
+        <li *ngIf="!isLoggedIn">
+          <a (click)="openLoginDialog()"  class="login_buttons">Login</a>
+        </li>
+    
+        <!-- Show "Logout" button when user is logged in -->
+        <li *ngIf="isLoggedIn">
+          <a (click)="logout()"  class="login_buttons">Logout</a>
+        </li>
       </div>
       }
    
