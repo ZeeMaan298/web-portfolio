@@ -40,11 +40,11 @@ header {
 }
 /* Logo */
 .logoDiv{
-  width: 90px;
+  width: 80px;
   height: 100%;
   top: 0%;
   bottom: 0%;
-  background-color: #36342f;
+  background-color: #090909;
   position: relative;
   border-radius: 45%;
   
@@ -218,7 +218,10 @@ nav a:hover {
 .mobile-menu a:hover {
     background: gray;
 }
-.Zeelogo{
-  background-color: red;
+.logdiv{
+  background-color: aqua;
 }
+/* .Zeelogo{
+  background-color: red;
+} */
 }

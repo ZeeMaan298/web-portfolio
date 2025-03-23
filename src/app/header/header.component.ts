@@ -6,6 +6,7 @@ import { LoginComponent } from '../login/login.component';
 import { AuthService } from '../services/auth.service';
 import { HostListener } from '@angular/core';
 
+
 @Component({
   selector: 'app-header',
   standalone: true,
