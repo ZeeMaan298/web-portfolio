@@ -124,7 +124,9 @@ nav a:hover {
   border: none;
   cursor: pointer;
 }
-
+li{
+  cursor: pointer;
+}
 .menu-button i {
   font-size: 24px;
   color: #888; /* Adjust icon color */
@@ -220,6 +222,9 @@ nav a:hover {
 }
 .logdiv{
   background-color: aqua;
+}
+li{
+  cursor: pointer;
 }
 /* .Zeelogo{
   background-color: red;
